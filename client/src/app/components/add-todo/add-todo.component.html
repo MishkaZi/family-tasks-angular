@@ -1,0 +1,18 @@
+<div class="add-todo">
+    <a routerLink="">Back to todos</a>
+    <form #form="ngForm" (ngSubmit)="onSubmit()">
+        <label for="description">Description: </label>
+        <textarea type="text" name="description" required minlength="10" maxlength="50"
+            [(ngModel)]="todo.description"></textarea>
+        <label for="date">Date: </label>
+        <input class="date" type="date" name="date" min="{{date | date:'yyyy-MM-dd'}}" required [(ngModel)]="todo.date">
+        <label for="homeMemberID">Choose a home member: </label>
+        <select name="homeMemberId" required [(ngModel)]="todo.homeMemberId">
+            <option selected disabled>Choose from: </option>
+            <option *ngFor="let homeMember of homeMemberService.homeMembers" [value]="homeMember.id">
+                {{ homeMember.name | titlecase}} the {{homeMember.role| titlecase}}
+            </option>
+        </select>
+        <button [ngClass]="form.valid?'btn-valid':'btn-invalid'" [disabled]="!form.valid">Add Todo</button>
+    </form>
+</div>

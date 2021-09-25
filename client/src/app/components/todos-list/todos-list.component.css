@@ -1,0 +1,37 @@
+.home {
+  max-height: 92vh;
+  width: 100%;
+  text-align: center;
+
+  overflow-y: scroll;
+}
+
+.todos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.link{
+  margin: 2rem;
+}
+
+a {
+
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: bisque;
+  border: 2px solid black;
+  padding: 0.2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top: 1rem;
+}
+
+a:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}

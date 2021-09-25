@@ -1,0 +1,11 @@
+<div class="home">
+    <div class="link">
+        <a routerLink="add-todo">Add Todo</a>
+
+    </div>
+    <div class="todos">
+        <app-todo *ngFor="let todo of todosService.todos" [todo]="todo">
+        </app-todo>
+
+    </div>
+</div>

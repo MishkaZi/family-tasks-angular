@@ -1,0 +1,21 @@
+.homepage {
+  background-image: url("../assets/Stay-On-Top-Of-Your-Assignments-with-Comfort.jpeg");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: bisque;
+}
+
+.homepage > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+

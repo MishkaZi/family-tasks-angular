@@ -1,0 +1,12 @@
+<div class="todo">
+    <p>
+        {{todo.name | titlecase}}
+    </p>
+    <p>
+        {{todo.description | titlecase}}
+    </p>
+    <p>
+        {{todo.date | date}}
+    </p>
+    <button class="btn" (click)="deleteTodo(todo.id)">Delete</button>
+</div>

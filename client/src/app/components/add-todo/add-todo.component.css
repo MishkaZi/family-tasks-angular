@@ -1,0 +1,68 @@
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid black 2px;
+    height: 20rem;
+    width: 20rem;
+    margin: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: bisque;
+    padding: 0 1rem 0 1rem;
+    border-radius: 10%;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  
+  form>*{
+      margin: 0.5rem;
+  }
+
+  .date{
+    height: 1.5rem;
+  }
+
+  select{
+    width: 10rem;
+    height: 1.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: bisque;
+    border: 2px solid black;
+    padding: 0.2rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 1rem;
+  }
+  
+  a:hover {
+      background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .add-todo{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+  }
+
+  button {
+
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: bisque;
+    border: 2px solid rgb(145, 140, 140);
+    padding: 0.2rem;
+    background-color: rgba(0, 0, 0, 0.3);
+
+  }
+  
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  button:disabled{
+    color: black;
+    background-color: aliceblue;
+  }
